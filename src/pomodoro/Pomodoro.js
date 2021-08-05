@@ -181,7 +181,7 @@ function stopButtonHandler () {                         //When Stop Button is cl
           />
         </div>
       </div>
-      {/* embedding FocusDuration component.  */}
+      {/* embedding Captions component.  */}
         <Captions 
           aria={aria}
           breakDuration={breakDuration}
