@@ -1,48 +1,38 @@
+ 
+# Decoder_Ring_Thinkful
 
 
-# Pomodoro Timer
+## Basic Functionality:
 
-The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.  
-The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student.
+-   A Pomodoro Timer that implements a timer that alternates between focus and rest periods. Users can increase/decrease the focus and rest periods, and an alarm sounds off when the timer runs out. 
 
-You will implement a Pomodoro timer that follows these steps (simplified from the original technique):
-
-1.  Set the focus duration (default to 25 minutes, no less than 5 or more than 60).
-2.  Set the break duration (default to 5 minutes, no less than 1 or more than 15).
-3.  When the user clicks the "play" button, the timer starts.
-4.  When the focus time expires, an alarm plays and then the break timer starts.
-5.  When the break time expires, the alarm plays again and then the focus timer starts.
-
-This application uses  [Bootstrap 4](https://getbootstrap.com/)  for styling and  [Open-Iconic icons](https://useiconic.com/open)  for icons.
-
-This project is designed to test your ability to work with rendering and state management using React. Before taking on this module, you should be comfortable with the following:
-
--   Installing packages via NPM.
--   Running tests from the command line.
--   Writing React function components.
--   Using hooks like  `useState()`
--   Debugging React code through console output
-- 
 ## Initial Screen
-The initial screen lets the user set the length of the focus and break and break sessions.
-![Initial Screen](https://res.cloudinary.com/strive/image/upload/w_1000,h_1000,c_limit/06ddc6bb0f6b5add9db441447000e59c-o-initial-screen.png)
+
+The initial screen lets the user set the length of the focus and break and break sessions.  [![Initial Screen](https://camo.githubusercontent.com/6722717f96e1babc291029b9b397f53598738db3de1414dea6093079d9583c59/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7374726976652f696d6167652f75706c6f61642f775f313030302c685f313030302c635f6c696d69742f30366464633662623066366235616464396462343431343437303030653539632d6f2d696e697469616c2d73637265656e2e706e67)](https://camo.githubusercontent.com/6722717f96e1babc291029b9b397f53598738db3de1414dea6093079d9583c59/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7374726976652f696d6167652f75706c6f61642f775f313030302c685f313030302c635f6c696d69742f30366464633662623066366235616464396462343431343437303030653539632d6f2d696e697469616c2d73637265656e2e706e67)
 
 The "stop" button is disabled on the initial screen because the user has not yet started the timer.
 
 When the user clicks the "play" button, the timer will always start a new focus session.
-## Active Session Screen
 
-After the user clicks the "play" button, the buttons to change the focus and break duration are disabled, and the session timer appears.
-![Active Session Screen](https://res.cloudinary.com/strive/image/upload/w_1000,h_1000,c_limit/517bceae35a5acf63fb3d20cb04733cf-ro-active-sesson.png)
-The session timer shows the type of session, either "Focusing" or "On Break", the total duration of the session, the time remaining, and a progress bar showing how much of the session is complete.
-## Paused Session Screen
+## [](https://github.com/nicpagan/Project_Pomodoro_Timer_Qualified_1#active-session-screen)Active Session Screen
 
-If the user clicks the "pause" button, "paused" appears below the time remaining.
-![Paused Session Screen](https://res.cloudinary.com/strive/image/upload/w_1000,h_1000,c_limit/e179e707512486a110fbdb155a7897b4-o-paused-session.png)
-The session timer shows the type of session, either "Focusing" or "On Break", the total duration of the session, the time remaining, and a progress bar showing how much of the session is complete.
+After the user clicks the "play" button, the buttons to change the focus and break duration are disabled, and the session timer appears.  [![Active Session Screen](https://camo.githubusercontent.com/24559eabd80c9c107516aae26e81ebe5c3f2625ca2155c81cbff88b28e8ae887/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7374726976652f696d6167652f75706c6f61642f775f313030302c685f313030302c635f6c696d69742f35313762636561653335613561636636336662336432306362303437333363662d726f2d6163746976652d736573736f6e2e706e67)](https://camo.githubusercontent.com/24559eabd80c9c107516aae26e81ebe5c3f2625ca2155c81cbff88b28e8ae887/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7374726976652f696d6167652f75706c6f61642f775f313030302c685f313030302c635f6c696d69742f35313762636561653335613561636636336662336432306362303437333363662d726f2d6163746976652d736573736f6e2e706e67)  The session timer shows the type of session, either "Focusing" or "On Break", the total duration of the session, the time remaining, and a progress bar showing how much of the session is complete.
 
-## Stopping a session
+## [](https://github.com/nicpagan/Project_Pomodoro_Timer_Qualified_1#paused-session-screen)Paused Session Screen
 
-Stopping a session returns the application to the initial screen and the user is able to change the focus and break duration.
+If the user clicks the "pause" button, "paused" appears below the time remaining.  [![Paused Session Screen](https://camo.githubusercontent.com/cd9982a9f5dfb4f26aeeab8623c3e1255088703b19e2436abd122629ff496998/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7374726976652f696d6167652f75706c6f61642f775f313030302c685f313030302c635f6c696d69742f65313739653730373531323438366131313066626462313535613738393762342d6f2d7061757365642d73657373696f6e2e706e67)](https://camo.githubusercontent.com/cd9982a9f5dfb4f26aeeab8623c3e1255088703b19e2436abd122629ff496998/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7374726976652f696d6167652f75706c6f61642f775f313030302c685f313030302c635f6c696d69742f65313739653730373531323438366131313066626462313535613738393762342d6f2d7061757365642d73657373696f6e2e706e67)  The session timer shows the type of session, either "Focusing" or "On Break", the total duration of the session, the time remaining, and a progress bar showing how much of the session is complete.
 
-Clicking the "play" button will always start a new focus session.
+## Challenges:
+
+This project allowed me to have a better understand of using the UseState() react hook and how to properly organize different components of a React application. 
+
+
+## Technologies Used:
+
+-   [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [Mocha](https://https://mochajs.org/)
+-   [Chai](https://https://www.chaijs.com/)
+
+## Todo:
+-    Create link to show webpage/deploy on Heroku
+-   Features like new background and images
