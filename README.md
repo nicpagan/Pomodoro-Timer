@@ -1,5 +1,5 @@
  
-# Decoder_Ring_Thinkful
+# Pomodoro Timer
 
 
 ## Basic Functionality:
