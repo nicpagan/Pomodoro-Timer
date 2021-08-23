@@ -30,8 +30,10 @@ This project allowed me to have a better understand of using the UseState() reac
 ## Technologies Used:
 
 -   [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
--   [Mocha](https://https://mochajs.org/)
--   [Chai](https://https://www.chaijs.com/)
+-   [React](https://reactjs.org/docs/introducing-jsx.html)
+    -   [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+-   [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+-   [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 ## Todo:
 -    Create link to show webpage/deploy on Heroku
